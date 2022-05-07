@@ -22,6 +22,12 @@ ZSH_THEME="robbyrussell"
 alias zshconfig="nano ~/.zshrc"
 alias zshreload="source ~/.zshrc"
 
+alias ex="/mnt/c/Windows/explorer.exe ."
+alias winget="winget.exe"
+alias wingetu="winget.exe upgrade"
+alias wingetua="winget.exe upgrade --all"
+alias wordpress="/mnt/c/Users/danie/Local\ Sites/"
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
