@@ -10,12 +10,8 @@ ZSH_THEME="robbyrussell"
 alias zshconfig="nano ~/.zshrc"
 alias zshsource="source ~/.zshrc"
 
-alias wordpress="/mnt/c/Users/danie/Local\ Sites/"
-
 alias ex="/mnt/c/Windows/explorer.exe ."
-alias win="winget.exe"
-alias winu="winget.exe upgrade"
-alias winua="winget.exe upgrade --all"
+alias winget="winget.exe"
 
 # Plugins
 plugins=(
