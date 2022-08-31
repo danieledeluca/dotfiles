@@ -21,7 +21,6 @@ module.exports = {
         strict: 'off',
         'func-names': 'off',
         'prefer-arrow-callback': 'off',
-        'no-var': 'off',
         quotes: [
             'error',
             'single',
