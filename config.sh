@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOTFILES=(.zshrc .gitconfig .eslintrc.js .stylelintrc.js)
+DOTFILES=(.zshrc .gitconfig .eslintrc.js .stylelintrc.js .prettierrc.js)
 
 # Remove old dotfiles and replace them
 for dotfile in $(echo ${DOTFILES[*]});

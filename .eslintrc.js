@@ -1,38 +1,14 @@
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
+    root: true,
     env: {
         browser: true,
-        commonjs: true,
         es2021: true,
-        jquery: true,
     },
-    extends: 'airbnb-base',
+    extends: ['eslint:recommended', 'airbnb-base', 'plugin:prettier/recommended'],
+    ignorePatterns: ['.gitignore', '**/*.min.js'],
     parserOptions: {
-        ecmaVersion: 12,
+        ecmaVersion: 'latest',
     },
-    ignorePatterns: ['vendor/**/*.js', '*.min.js'],
-    rules: {
-        indent: [
-            'error',
-            4,
-            {
-                SwitchCase: 1,
-            },
-        ],
-        strict: 'off',
-        'func-names': 'off',
-        'prefer-arrow-callback': 'off',
-        quotes: [
-            'error',
-            'single',
-            {
-                allowTemplateLiterals: true,
-            },
-        ],
-        'max-len': [
-            'error',
-            {
-                code: 120,
-            },
-        ],
-    },
+    rules: {},
 };
