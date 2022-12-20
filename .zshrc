@@ -10,6 +10,8 @@ ZSH_THEME="robbyrussell"
 alias zshconfig="nano ~/.zshrc"
 alias zshsource="source ~/.zshrc"
 
+alias localwp="cd ~/../../mnt/c/Users/danie/Local\ Sites"
+
 alias ex="/mnt/c/Windows/explorer.exe ."
 alias winget="winget.exe"
 
