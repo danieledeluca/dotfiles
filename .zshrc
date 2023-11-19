@@ -9,6 +9,7 @@ ZSH_THEME="robbyrussell"
 # Aliases
 alias zshconfig="nano ~/.zshrc"
 alias zshsource="source ~/.zshrc"
+alias zshhistory="recover_zsh_history_file"
 
 alias ex="/mnt/c/Windows/explorer.exe ."
 alias winget="winget.exe"
@@ -22,6 +23,13 @@ plugins=(
 # Funcions
 keep_current_path() {
   printf "\e]9;9;%s\e\\" "$(wslpath -w "$PWD")"
+}
+
+recover_zsh_history_file() {
+  mv ~/.zsh_history ~/.zsh_history_bad
+  strings ~/.zsh_history_bad > ~/.zsh_history
+  fc -R ~/.zsh_history;
+  rm ~/.zsh_history_bad
 }
 
 precmd_functions+=(keep_current_path)
